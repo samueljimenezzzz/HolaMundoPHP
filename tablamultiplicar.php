@@ -16,7 +16,7 @@
     ?>
 <body>
     <form method="post" action="">
-        <label for="numero">numero:</label>
+        <label for="numero">Numero:</label>
         <input type="number" id="numero" name="numero" required>
         
         <button type="submit">Enviar</button>
@@ -26,7 +26,7 @@
 
     for($i = 1; $i <= 10; $i++){
         $numero = $numero*$i;
-        echo "<p>$numero<p>";
+        echo "<p>$numero * $i= $numero<p>";
         $numero = $aux;
     }
 
