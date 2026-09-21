@@ -11,7 +11,11 @@
     else{
         $numero= "1";
     }
-    $aux = $numero
+    $aux = $numero;
+    
+    function sumar($a,$b){
+        return $a+$b;
+    }
     
     ?>
 <body>
@@ -28,7 +32,9 @@
         $numero = $numero*$i;
         echo "<p>$numero * $i= $numero<p>";
         $numero = $aux;
+        
     }
+    echo sumar($numero,$aux);
 
     ?>  
     

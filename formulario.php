@@ -31,8 +31,8 @@
 
     
     <?php
-        echo "<h1>¡Hola, $nombre!</h1>";
-        echo $nombre;
+        echo "<h1>¡Hola," .htmlspecialchars($nombre) ."!</h1>";
+        echo htmlspecialchars($nombre);
         if($edad >=18){
             echo "<h1>¡Bienvenido!</h1>";
         }
